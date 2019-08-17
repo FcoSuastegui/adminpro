@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProgressComponent } from './pages/progress/progress.component';
+import { Graficas1Component } from './pages/graficas1/graficas1.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ProgressComponent } from './pages/progress/progress.component';
     LoginComponent,
     NopagefoundComponent,
     DashboardComponent,
-    ProgressComponent
+    ProgressComponent,
+    Graficas1Component
   ],
   imports: [
     BrowserModule
