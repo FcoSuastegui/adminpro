@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ProgressComponent } from './pages/progress/progress.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NopagefoundComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProgressComponent
   ],
   imports: [
     BrowserModule
