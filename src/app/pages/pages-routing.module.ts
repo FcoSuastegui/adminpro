@@ -8,9 +8,9 @@ import { ProgressComponent } from './progress/progress.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: PagesComponent, children: [
-    { path: '', component: DashboardComponent },
-    { path: 'graficas1', component: Graficas1Component },
-    { path: 'progress', component: ProgressComponent },
+    { path: '', component: DashboardComponent, data: { titulo: 'Dashboard'} },
+    { path: 'graficas1', component: Graficas1Component, data: { titulo: 'Graficas'} },
+    { path: 'progress', component: ProgressComponent, data: { titulo: 'Progress'} },
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 
   ]},
