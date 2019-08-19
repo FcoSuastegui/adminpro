@@ -4,6 +4,9 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { HeaderComponent } from './header/header.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AccountSettingsComponent } from '../shared/account-settings/account-settings.component';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -12,14 +15,21 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BreadcrumbsComponent,
     HeaderComponent,
     NopagefoundComponent,
-    SidebarComponent
+    SidebarComponent,
+    AccountSettingsComponent,
+
   ],
   exports: [
     CommonModule,
     BreadcrumbsComponent,
     HeaderComponent,
     NopagefoundComponent,
-    SidebarComponent
+    AccountSettingsComponent,
+    SidebarComponent,
+  ],
+  imports: [
+    RouterModule,
+    CommonModule
   ]
 })
 export class SharedModule { }

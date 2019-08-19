@@ -11,6 +11,10 @@ import { SharedModule } from '../shared/shared.module';
 import { PagesComponent } from './pages.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 
+import { ChartsModule } from 'ng2-charts';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +22,11 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
     DashboardComponent,
     Graficas1Component,
     ProgressComponent,
-    IncrementadorComponent
+    IncrementadorComponent,
+    GraficoDonaComponent,
   ],
   exports: [
     CommonModule,
-    PagesComponent,
     DashboardComponent,
     Graficas1Component,
     ProgressComponent
@@ -30,7 +34,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
   imports: [
     PagesRoutingModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ]
 })
 export class PagesModule { }
